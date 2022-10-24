@@ -52,7 +52,7 @@ ul {
 }
 
 .banner-top {
-  background: url('../images/crop.jpg') no-repeat center;
+  background: url("../images/crop.jpg") no-repeat center;
   background-size: cover;
 }
 
@@ -79,10 +79,6 @@ ul {
   text-transform: capitalize;
 }
 
-.w3layouts-banner-info h3{
-  font-size: 5vw;
-}
-
 .w3layouts-banner-info i {
   vertical-align: middle;
 }
@@ -105,24 +101,23 @@ h3.heading {
 p.about-text {
   width: 80%;
 }
-.mt-4{
-  color:rgb(36, 35, 35);
+.mt-4 {
+  color: rgb(36, 35, 35);
   font-size: 30px;
-  font-family: 'Courier, monospace';
+  font-family: "Courier, monospace";
 }
 
 /* services */
 
-.card-body a{
+.card-body a {
   color: black;
   text-decoration: none;
 }
 
-.card-body h5{
+.card-body h5 {
   font-weight: bold;
   letter-spacing: 3px;
   font-size: x-large;
-
 }
 
 /* services */
@@ -138,12 +133,9 @@ footer {
   letter-spacing: 5px;
 }
 
-
 /*-- about page --*/
- 
 
 /*-- //about page --*/
-
 
 /*-- move top --*/
 a.move-top {
@@ -158,3 +150,77 @@ a.move-top {
 }
 /*-- //move top --*/
 
+/*-- Responsive design --*/
+
+@media (max-width: 1080px) {
+  .w3layouts-banner-info h3 {
+    font-size: 3.5em;
+  }
+  .w3layouts-banner-info {
+    padding-top: 14em;
+  }
+}
+
+@media (max-width: 991px) {
+  .w3layouts-banner-info {
+    padding-top: 12em;
+  }
+
+  .w3layouts-banner-info h4 {
+    font-size: 22px;
+    letter-spacing: 3px;
+    line-height: 25px;
+  }
+}
+
+@media (max-width: 800px) {
+  .w3layouts-banner-info h3 {
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 736px) {
+  .w3layouts-banner-info h4 {
+    font-size: 18px;
+    letter-spacing: 2px;
+    line-height: 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  .w3layouts-banner-info p {
+    font-size: 15px;
+  }
+  .w3layouts-banner-info h3 {
+    font-size: 2.7em;
+    letter-spacing: 5px;
+  }
+
+  .w3layouts-banner-info {
+    padding-top: 10em;
+  }
+}
+
+@media (max-width: 480px) {
+  .w3layouts-banner-info h3 {
+    font-size: 2.2em;
+  }
+
+  .w3layouts-banner-info {
+    padding-top: 8em;
+  }
+}
+
+@media (max-width: 414px) {
+  .w3layouts-banner-info h3 {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 384px) {
+  .w3layouts-banner-info p {
+    letter-spacing: 1px;
+  }
+}
+
+/*-- //Responsive design --*/
