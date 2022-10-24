@@ -1,0 +1,156 @@
+html,
+body {
+  margin: 0;
+  font-size: 100%;
+  background: #fff;
+  font-family: "Thasadith", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  color: black;
+}
+li {
+  list-style-type: none;
+}
+
+p {
+  margin: 0;
+  font-size: 17px;
+  line-height: 2em;
+  letter-spacing: 2px;
+  color: #707579;
+  font-weight: 600;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* header */
+
+.nav-item {
+  letter-spacing: 1.5px;
+}
+
+/* header */
+
+/* banner style */
+.banner_w3lspvt {
+  position: relative;
+  z-index: 1;
+}
+
+.banner-top {
+  background: url('../images/crop.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.w3layouts-banner-info {
+  padding-top: 16em;
+}
+
+.w3layouts-banner-info h3 {
+  font-size: 4em;
+  text-shadow: 3px 4px 6px rgba(45, 45, 45, 0.15);
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 18px;
+  text-transform: uppercase;
+}
+.w3layouts-banner-info p {
+  max-width: 650px;
+  color: #fff;
+}
+.w3layouts-banner-info h4 {
+  color: #eee;
+  letter-spacing: 5px;
+  line-height: 35px;
+  text-transform: capitalize;
+}
+
+.w3layouts-banner-info i {
+  vertical-align: middle;
+}
+
+.banner-top {
+  min-height: 770px;
+}
+.overlay {
+  min-height: 770px;
+  background: rgba(0, 0, 0, 0.4);
+}
+/*-- //banner style --*/
+
+/*-- about us --*/
+h3.heading {
+  font-size: 40px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+p.about-text {
+  width: 80%;
+}
+.mt-4{
+  color:rgb(36, 35, 35);
+  font-size: 30px;
+  font-family: 'Courier, monospace';
+}
+
+/* services */
+
+.card-body a{
+  color: black;
+  text-decoration: none;
+}
+
+.card-body h5{
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-size: x-large;
+
+}
+
+/* services */
+
+/*-- footer --*/
+
+footer {
+  background-color: black;
+}
+.logo2 a {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 5px;
+}
+
+
+/*-- about page --*/
+ 
+
+/*-- //about page --*/
+
+
+/*-- move top --*/
+a.move-top {
+  width: 34px;
+  height: 34px;
+  background: url(../images/move-top.png) no-repeat;
+  display: inline-block;
+  position: fixed;
+  bottom: 4%;
+  right: 2%;
+  z-index: 0;
+}
+/*-- //move top --*/
+

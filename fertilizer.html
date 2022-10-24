@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>FarmingTon - Fertilizer Suggestion</title>
+	<link rel="shortcut icon" href="images/fav.png" />
+
+	<!-- for-mobile-apps -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="keywords" content="Agro Harvest Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+
+
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+
+	</script>
+
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<!-- bootstrap css -->
+	<link href="css/style.css" rel='stylesheet' type='text/css' />
+	<!-- custom css -->
+	<link href="css/font-awesome.min.css" rel="stylesheet"><!-- fontawesome css -->
+	<!-- //css files -->
+
+	<script type="text/JavaScript" src="scripts/cities.js"></script>
+
+
+	<!-- google fonts -->
+	<link href="//fonts.googleapis.com/css?family=Thasadith:400,400i,700,700i&amp;subset=latin-ext,thai,vietnamese"
+		rel="stylesheet">
+	<!-- //google fonts -->
+
+	<style>
+		header {
+			background-color: rgba(30, 30, 30, 1);
+			margin-top: 0rem;
+			display: block;
+
+		}
+	</style>
+</head>
+
+<body>
+
+	<!-- Nav -->
+	<nav id="home" class="navbar navbar-expand-lg navbar-dark bg-dark pb-3 py-3">
+		<a class="navbar-brand font-weight-bold" href="#">FarmingTon</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto px-3">
+				<li class="nav-item px-1">
+					<a class="nav-link" href="index.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="crop.html">Crop</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" href="#">Fertilizer<span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="disease.html">Disease</a>
+				</li>
+			</ul>
+			<form class="form-inline my-2 my-lg-0">
+				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+				<button type="button" class="btn btn-success">Search</button>
+			</form>
+		</div>
+	</nav>
+
+
+	<style>
+		html body {
+			background-color: rgb(206, 206, 228);
+		}
+	</style>
+
+	<!--Form Section-->
+	<br /><br />
+	<h2 style="text-align: center; margin: 0px; color: black">
+		<b>Receive knowledgeable recommendations for fertilizer depending on your soil</b>
+	</h2>
+	<br />
+
+	<div style="
+    width: 350px;
+    height: 40rem;
+    margin: 0px auto;
+    color: black;
+    border-radius: 25px;
+    padding: 10px 10px;
+  ">
+		<form method="POST" action="/fertilizer-predict">
+			<div class="form-group">
+				<label for="Nitrogen" style="font-size: 17px"><b>Nitrogen</b></label>
+				<input type="number" class="form-control" id="Nitrogen" name="nitrogen"
+					placeholder="Enter the value (example:50)" style="font-weight: bold" required />
+			</div>
+			<div class="form-group">
+				<label for="Phosphorous" style="font-size: 17px"><b>Phosphorous</b></label>
+				<input type="number" class="form-control" id="Phosphorous" name="phosphorous"
+					placeholder="Enter the value (example:50)" style="font-weight: bold" required />
+			</div>
+
+			<div class="form-group">
+				<label for="Pottasium" style="font-size: 17px"><b>Pottasium</b></label>
+				<input type="number" class="form-control" id="Pottasium" name="pottasium"
+					placeholder="Enter the value (example:50)" style="font-weight: bold" required />
+			</div>
+			<div class="form-group">
+				<label for="crop" style="font-size: 17px"><b>Crop you want to grow</b></label>
+				<select name="cropname" class="form-control" id="crop" placeholder="Select a crop"
+					style="font-weight: bold" required>
+					<option selected>Select crop</option>
+					<option>rice</option>
+					<option>maize</option>
+					<option>chickpea</option>
+					<option>kidneybeans</option>
+					<option>pigeonpeas</option>
+					<option>mothbeans</option>
+					<option>mungbean</option>
+					<option>blackgram</option>
+					<option>lentil</option>
+					<option>pomegranate</option>
+					<option>banana</option>
+					<option>mango</option>
+					<option>grapes</option>
+					<option>watermelon</option>
+					<option>muskmelon</option>
+					<option>apple</option>
+					<option>orange</option>
+					<option>papaya</option>
+					<option>coconut</option>
+					<option>cotton</option>
+					<option>jute</option>
+					<option>coffee</option>
+				</select>
+			</div>
+
+			<div class="d-flex justify-content-center">
+				<button type="submit" class="btn btn-info" style="
+          color: black;
+          font-weight: bold;
+          width: 130px;
+          height: 50px;
+          border-radius: 12px;
+          font-size: 21px;
+        ">
+					Predict
+				</button>
+			</div>
+		</form>
+	</div>
+
+
+	<!-- footer -->
+
+	<footer class="text-center py-4">
+		<div class="container py-md-3">
+			<!-- logo -->
+			<h2 class="logo2 text-center">
+				<a href="#home">
+					FarmingTon
+				</a>
+			</h2>
+			<br>
+			<div class="w3l-copy text-center">
+				<p class="text-da">An Environmental Startup<br> </p>
+			</div>
+			<p class="home">
+			<p>Made with ❤️ by Divyansh Saxena</p>
+			<p>&copy; Copyright 2022</p>
+
+		</div>
+	</footer>
+	<!-- //footer -->
+
+
+	<!-- move top icon -->
+	<a href="#home" class="move-top text-center"></a>
+	<!-- //move top icon -->
+</body>
+
+</html>
