@@ -79,6 +79,10 @@ ul {
   text-transform: capitalize;
 }
 
+.w3layouts-banner-info h3{
+  font-size: 5vw;
+}
+
 .w3layouts-banner-info i {
   vertical-align: middle;
 }
